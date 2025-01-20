@@ -96,7 +96,7 @@ export class PostController {
             if (!file) {
                 throw new BadRequestException("No file received");
             }
-            const filePath = `http://localhost:3001/uploads/${file.filename}`;
+            const filePath = `https://apitesteaddimition.online/uploads/${file.filename}`;
             return { url: filePath };
         } catch (erro: any) {
             throw new InternalServerErrorException('Erro while uploading file');

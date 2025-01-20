@@ -33,6 +33,9 @@ export class PostService {
             username: true,
           },
         },
+        order: {
+          postDate: 'DESC', 
+        }
       });
     } catch (error: any) {
       console.error(error)
@@ -54,6 +57,9 @@ export class PostService {
             username: true,
           },
         },
+        order: {
+          postDate: 'DESC', 
+        }
       });
     } catch (error: any) {
       console.error(error);
